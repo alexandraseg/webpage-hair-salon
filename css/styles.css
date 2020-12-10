@@ -1,0 +1,378 @@
+/* Setting up some global styles that the entire page will have */
+
+body{
+	font-size: 16px; /*could be 16px */
+	margin: 0; 
+	color: #FFFFFF; /*white*/					
+	background-color: #0C0B10 !important; 
+	font-family: 'Metropolis', 'sans-serif';
+}
+
+#hairstylesBody{
+	background-color: #F3EAE4 !important;
+}
+
+#nailsBody{
+	background-color: #1F1309 !important;
+}
+
+#barbershopBody{
+	background-color: #020202 !important;
+}
+
+#aboutBody{
+	background-color: #0C0B10 !important; 
+}
+
+
+/** HEADER **/
+
+#header-nav{
+	background-color: #DBDBDB;
+	border-radius: 0; /*Because the default was that the borders were a little bit round */
+	border: 0; /*no border, just grey */
+} 
+
+#logo-img{
+	background: url("../images/Logo.png") no-repeat; 
+	width: 123px;
+	height: 119px;
+	top: 12px;
+
+}
+
+.navbar-brand{
+	padding-top: 25px;
+}
+
+.navbar-brand h1{ /*Store's name */
+	font-family: 'El Messiri', serif;
+	color: #000000;
+	font-size: 1,2em;
+	margin-top:0;
+	margin-bottom:0;
+	line-height: .75;
+	float: left;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus{
+	text-decoration: none;
+}
+
+.menubar h4{ /*menus names */
+	font-family: 'El Messiri', serif;
+	color: #000000;
+	font-size: 1,2em;
+	margin-top:0;
+	margin-bottom:0;
+	line-height: .75;
+	float: right;
+}
+
+.menubar h5{ /*telephone */
+	font-family: 'El Messiri', serif;
+	color: #000000;
+	font-size: 1,2em;
+	margin-top:0;
+	margin-bottom:0;
+	line-height: .75;
+	float: right;
+}
+
+.menubar a:hover, .navbar-brand a:focus{
+	text-decoration: none;
+}
+
+
+#fb-img{
+	background: url("../images/facebook_icon.png") no-repeat; 
+	width: 33px;
+	height: 33px;
+	/*left: 1232px;*/
+	top: 27px;
+	/*background-blend-mode: color-burn;*/ 
+}
+
+#inst-img{
+	background: url("../images/instagram_icon.png") no-repeat; 
+	width: 33px;
+	height: 33px;
+	top: 27px;
+
+}
+
+#phone-img{
+	background: url("../images/telephone_icon.png") no-repeat; 
+	width: 33px;
+	height: 33px;
+	top: 27px;
+
+}
+
+
+
+/* ********************************************************** */
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+#phone {
+  margin-top: 5px;
+}
+#phone a { /* Phone number */
+  text-align: right;
+  padding-bottom: 0;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
+
+/*HOME PAGE */
+
+.container .jumbotron{
+	box-shadow: 0 0 50px #131419;
+	border: 2px solid #131419;
+	background-color: #B1B1AA; 
+	margin-top: 35px;
+}
+
+#hairstyles-tile, #nails-tile, #barbershop-tile{
+	height: 200px;
+	width:  200px;
+	/*margin-bottom: 15px;*/ /*this is more for when it start sliding one underneath the other, as well to separate it a bit
+						from the footer */
+	/*margin-left: 60px;*/
+	margin: 0 auto 15px; /*this means: 0 auto 15px auto | this only works if the element is sized (not 100%) | purpose: to be centered; */
+	position: relative;
+	border:2px solid #131419;
+	overflow: hidden;
+}
+
+#navbarHome:hover, #navbarServices:hover, #navbarAbout:hover, #navbarTel:hover{
+	box-shadow: 0 1px 5px 1px #F6F6F6; /*grey shadow */
+	background-color:#F6F6F6;
+}
+
+
+#hairstyles-tile:hover, #nails-tile:hover, #barbershop-tile:hover {
+	box-shadow: 0 1px 5px 1px #cccccc; /*grey shadow */
+
+}
+
+#hairstyles-tile{
+	background: url("../images/hairstyles.png") no-repeat;
+	background-position: center;
+}
+
+#nails-tile{
+	background: url("../images/nails.png") no-repeat;
+	background-position: center;
+}
+
+#barbershop-tile{
+	background: url("../images/barbershop.png") no-repeat;
+	background-position: center;
+}
+
+/*positioning labels*/
+
+#hairstyles-tile span, #nails-tile span, #barbershop-tile span{
+	position:absolute;
+	bottom:0;
+	right: 0;
+	width: 100%; /*of the containing element*/
+	text-align: center;
+	font-size: 1.6em; /*60% above whatever it's inheriting*/
+	background-color: #000; /* black */
+	color: #fff; /*white */
+	opacity: .4; /*from 100% to 80% so that it becomes see-through */
+
+}
+
+
+/* FOOTER */
+.panel-footer { /*overriding a bootstrap css class*/
+	margin-top: 30px; /*to separate it from the tiles */ 							
+	padding-top: 35px; /*to separate it within the actual footer itself */
+	padding-bottom: 30px; /*to separate it from the bottom of the edge of the browser */
+	background-color: #DBDBDB;
+	border-top:0;
+	width: 100% !important;
+
+}
+
+.panel-footer div .row{
+	margin-bottom: 35px; /*separate the copyright from the rest of the row */
+	/*width: 1200px !important;*/
+}
+
+.panel-footer section{
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+#hours, #address, #findus{
+	line-height: 2; /*the space between the lines */
+}
+
+#hours > span, #address >span, #findus >span{
+	font-size: 1.3em;
+}
+
+#map-tile{
+	height:200px;
+	width: 300px;
+	margin: 0 auto 15px;
+	position: absolute;
+	border: 2px solid #131419;
+	overflow:hidden;
+	/*background-position: center;*/
+}
+
+#map-tile:hover{
+	box-shadow: 0 1px 5px 1px #cccccc; /*grey shadow */
+}
+
+/* END OF FOOTER */
+
+/* **************** the below subdivisions are taken from bootstrap **************************************** */
+
+
+/**** Large Devices Only */  
+
+@media(min-width: 1200px){
+	.container .jumbotron{
+		background:url("../images/homePagePhoto1200.png") no-repeat;
+		height:407px; /* we are setting its height because background images don't affect the height of the element */
+	}
+}
+
+/**** Medium Devices Only */
+
+@media(min-width: 992px) and (max-width:1199px){
+	.container .jumbotron{
+		background:url("../images/homePagePhoto992.png") no-repeat;
+		height:336px; /* we are setting its height because background images don't affect the height of the element */
+	}
+}
+
+/**** Small Devices Only */
+
+@media(min-width: 768px) and (max-width:991px){
+	.container .jumbotron{
+		background:url("../images/homePagePhoto768.png") no-repeat;
+		height: 260px; /* we are setting its height because background images don't affect the height of the element */
+	}
+
+	#findus{
+		clear:both;
+	}
+}
+
+/**** Extra Small Devices Only */
+
+@media(max-width: 767px){
+	.container .jumbotron{
+		background:url("../images/homePagePhoto768.png") no-repeat;
+		height: 260px; 
+	}
+
+	/*Header*/
+	.navbar-brand{
+		padding-top: 10px;
+		height: 80px;
+	}
+
+	.navbar-brand h1{ /*hairsalon's name */
+		padding-top: 10px;
+		font-size: 5vw; /*1vw=1% of viewport width - using these units so that it is responsive */
+	}
+
+	.menubar h4{ /*menu names */
+		font-size: 4vw;
+	}
+
+	.menubar h5{  /*telephone */
+		font-size: 4vw; 
+	}
+
+	#findus{
+		clear:both;
+	}
+	/*	End Header*/
+
+	/* Footer */
+	.panel-footer section{
+		margin-bottom: 30px;
+		text-align: center;
+	}
+
+	.panel-footer section:nth-child(3){
+		margin-bottom: 0; /*margin already exists on the whole row */
+	}
+
+	.panel-footer section hr{
+		width: 50%; /*instead of having hr go all the way across the screen */
+	}
+
+/*	#findus{
+		width: 120px;
+		margin:0 auto 0;
+	}*/
+
+	/*End of Footer */
+}
+
+/*super extra small devices only e.g. iPhone4 */
+@media (max-width: 479px){
+	/*Header */
+	.navbar-brand h1{ /*hair salon name */
+		padding-top: 5px;
+		font-size: 6vw;
+	}
+
+	.menubar h4{ /*menu names */
+		font-size: 5vw;
+	}
+
+	.menubar h5{  /*telephone */
+		font-size: 5vw; 
+	}
+
+	/*Home page */
+	#hairstyles-tile, #nails-tile, #barbershop-tile{
+		width: 120px;
+		margin: 0 auto 15px;
+	}
+}
+
+
+#collapsable-nav a span{
+	font-size: 1em; /*takes whatever its parent element had and keeps it exactly the same */
+	margin-right: 5px;
+}
+}
+
+/*********************************** hairstyles style **********************************************************/
+
+#subheading{
+	color: #A7715F !important;
+	}
+
