@@ -1,0 +1,238 @@
+<!--Header and footer will be the same as in index.html, only the main content is going to change --->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HairCraft & Nails</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Metropolis">
+</head>
+
+<body id="hairstylesBody">
+	
+	<header>
+		<!--navbar is a component for Bootstrap. Bootstrap provides a base class (navbar) and a subclass (navbar-default) that adds something to the former. We have to specify color and to fix the rounded border.-->
+		<nav id="header-nav" class="navbar navbar-default"> 				<!--  -->
+		
+			<div class="container"> <!-- the entire content of the website is going to be aligned with this container. There will be one more for the main content. "Container": constrains the width of the content vs "container-fluid": content stretches and reposition itself all the way to the widest point. Because the website doesn't have that much info on it, it would look weird in the latter case.
+			Also, the div with the container sits inside of the nav element so that the background colour of the header will stretch all the way to the edges of the browser. So nav will contain the color and the container the content. -->
+
+				<div class="navbar-header"> <!-- placing logo -->
+					<!--Bootstrap documentation (getbootstrap.com/components > brand and toggle get grouped for better mobile display > it's a wrapper class that a lot of other classes will depend on being in this position in order to work properly, adn there;s some padding that's involved, sometimes it floats and others depending on the size of the screen will do other things) -->
+
+					<a href="index.html" class="pull-left d-none d-md-block d-lg-none d-none d-lg-block d-xl none"> <!--logo name surrounded with an <a> element so that it becomes clickable -->
+						<div id="logo-img" alt="Logo image">
+						</div> <!--alt so that the screen readers will know what that is. Id so that we insert it as a background imae in there.  -->
+					</a>
+				</div>
+
+				<div class="navbar-brand" style="margin-left:-2vw; margin-bottom: 5vw; float:left;">
+						<a href="index.html"><h1>Haircraft & Nails</h1></a> 
+						<h1>&nbsp;|&nbsp; </h1> 
+						<a href="barbershop.html"><h1>Razor</h1></a>
+				</div>
+
+
+				<div id="navbarHome" class="menubar" style="margin-bottom:-7vw; float:right;">
+					<a href="index.html"><h4>Home</h4></a>
+				</div>
+				<div id="navbarServices" class="menubar" style="margin-bottom:-7vw; float:right;">
+					<a href="#"><h4>Services</h4></a>
+				</div>
+				<div id="navbarAbout" class="menubar" style="margin-bottom:-7vw; float:right;">
+					<a href="about.html"><h4>About</h4></a>
+				</div>
+				<!-- <div class="menubar">
+					<a href="#"><h4>Contact us</h4></a>
+				</div> -->
+			
+				<div style="margin-bottom: 5vw; float:right;">
+					<a href="https://www.facebook.com/Haircraft-Nails-685160591646059/" target="_blank"> <!--target="_blank" so that it opens in a new tab -->
+						<div id="fb-img" alt="Facebook image">
+						</div>
+					</a>
+				</div>
+					<div style="margin-bottom: 5vw; margin-left: -2vw; float:right;">
+					<a href="https://www.instagram.com/haircraft_n_nails/" target="_blank">
+						<div id="inst-img" alt="Instagram image">
+						</div>
+					</a>
+				</div>
+					<div style="margin-bottom: 5vw; margin-right: -15vw; margin-left: -2vw; float:right;">
+					<a href="tel: 2108235935">
+						<div id="phone-img" alt="Phone image">
+						</div>
+					</a>
+				</div>
+					<div id="navbarTel" class="menubar" style="float:right;">
+					<a href="tel: 2108235935"><h5>+30 210 82 35 935</h5></a>
+				</div>
+
+
+				<nav class="navbar navbar-toggleable-md navbar-light bg-faded d-block d-sm-block d-md-none">
+				  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+				  <a class="navbar-brand" href="#">Navbar</a>
+
+				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				    <ul class="navbar-nav mr-auto">
+				      <li class="nav-item active">
+				        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="hairstyles.html">Haircraft</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="nails.html">Nails</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="barbershop.html">Barbershop</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="about.html">About</a>
+				      </li>
+				    </ul>
+				    <form class="form-inline my-2 my-lg-0">
+				      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+				      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				    </form>
+				  </div>
+				</nav>
+
+
+			</div> <!-- finish of container -->
+		</nav> <!-- finish of nav id=header-nav -->
+	</header>
+
+
+	<!-- HOME PAGE BODY -->
+
+	<div id="main-content" class="container"> <!-- the edges of the container align with the edges of the main content -->
+		
+		<!-- <section class="row">
+			<section id="Haircraft-Title" class="col-xs-12" style="margin-left:13px;">
+				<h2 id="hairstyles-title" style="color:#A7715F; margin-top:5px;">Haircraft</h2>
+			</section>
+
+		</section> -->
+		
+		<section class="row">
+			<section id="HaircraftColumn1" class="col-md-4 col-sm-6 col-xs-12">
+				<div><h2 id="hairstyles-title" style="color:#A7715F; margin-top:5px;">Haircraft</h2></div>
+				<div class="subheading" style="color:#A7715F;">Haircut and Forming</div>
+					Women’s haircut from: €15<br>
+					Children’s haircut: €10<br>
+					Headwash and simple Brushing: €15 <br>
+					Brushing Short: €10<br>
+					Brushing Long: €18<br>
+				<br>
+				<div class="subheading" style="color:#A7715F;">Hair Treatment</div>
+				Keratin Treatment from: €50<br>
+				Headwash: €3 <br>
+				Hair moisturizing mask from: €7<br>
+				<br>
+
+				<div class="subheading" style="color:#A7715F;">Form Treatment</div>
+				Permanent short: €35<br>
+				Permanent long: €45<br>
+				Permanent medium: €40
+			</section>
+
+			<section id="HaircraftColumn2" class="col-md-4 col-sm-6 col-xs-12">
+
+				<div class="subheading" style="color:#A7715F; margin-top: 50px;">Colour</div> <!-- margin top should be hidden when sm and xs-->
+					Short: €20<br>
+					Long: €35<br>
+					Medium: €30<br>
+					Decapage: €30<br>
+					Refle: €16<br>
+				<br>
+				<div class="subheading" style="color:#A7715F;">Balayage Ombre</div>
+					Highlights from: €50<br>
+					Highlights Half-Head: €30<br>
+				<br>
+				<div class="subheading" style="color:#A7715F;">Hair Removal</div>
+					Bikini full hair removal: €20<br>
+					Upper lip: €5 <br>
+					Men – legs: €20<br>
+					Men – hands: €10<br>
+					Thread: €10 <br>
+					<br>
+			</section>
+
+			<section id="HaircraftColumn3" class="col-md-4 col-sm-6 col-xs-12">
+				<img src="/images/hairsalon.png">
+				<!-- <div class="jumbotron jumbotron-fluid jumbotron-Haircraft"></div> -->
+
+
+			</section>
+
+
+
+
+			
+		</section><!--end of section class=row -->
+	</div> <!-- end of main content > container -->
+
+
+	<!-- Footer -->
+		<footer class="panel-footer"> <!--this class sets some default background, some padding, etc. -->
+			<div class="container">
+				<div class="row">
+					
+					<section id="address" class="col-sm-4">
+						<span>Address:</span><br>
+						Salon Haircraft & Nails <br>
+						Lefkados 7-9<br>
+						Kypseli, 113 62<br>
+						Athens, Greece
+						<hr class="d-block d-sm-none"> <!-- visible only on xs -->
+					</section>
+					<section id="findus" class="col-sm-4">
+						<span>Find us:</span><br>
+						<a href="https://goo.gl/maps/VLdAt6ca3RKumgxe6" target="_blank">
+							<div id="map-tile" style="width: 350px; height: 230px;">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.147786507637!2d23.73533225001514!3d37.997013207017204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a2c98ec83321%3A0x5a5b1cc494ca3a87!2sLefkados%207%2C%20Athina%20113%2062!5e0!3m2!1sen!2sgr!4v1607115960105!5m2!1sen!2sgr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+							</div>
+						</a>
+						<hr class="d-block d-sm-none"> <!-- visible only on xs -->
+					</section>
+					<section id="hours" class="col-sm-4"> <!-- will be separated in 3 sections [1] [2] [3] until screen becomes smaller than "sm", therefore extra small: then they will stack one above the other and the horizontal rule will apply-->
+						<span>Hours:</span><br> <!--I 've kept the span only on the hours cause I want them to be a different font size than the rest info -->
+						Monday: closed<br>
+						Tuesday: 9 am to 7 pm<br>
+						Wednesday: 9 am to 3 pm<br>
+						Thursday: 9 am to 7 pm<br>
+						Friday: 9 am to 7 pm<br>
+						Saturday: 9 am to 4 pm<br>
+						Sunday: closed<br>
+						<hr class="d-block d-sm-none"> <!-- visible only on xs -->
+					</section>
+
+				</div> <!-- row end -->
+
+				<div class="text-center">&copy; Copyright Haircraft & Nails 2020</div>
+			</div> <!-- panel footer > container end -->
+		
+		</footer> <!-- END OF FOOTER -->
+
+
+
+
+
+<!-- jQuery (Bootstrap JS plugins depend on it) --> 
+<script src="../js/jquery-3.5.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/ajax-utils.js"></script>
+<script src="../js/script.js"></script>
+
+
+</body>
+
+</html>
